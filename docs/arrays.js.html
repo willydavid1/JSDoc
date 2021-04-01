@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: index.js</title>
+    <title>JSDoc: Source: arrays.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: index.js</h1>
+    <h1 class="page-title">Source: arrays.js</h1>
 
     
 
@@ -27,10 +27,31 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * This is a fullname
- * @type {string}
+ * Array of numbers
+ * @type {Array}
  */
-const fullName = "Willy David"
+
+const numbers = [1, true, [], 2, 3, 4, 5, 6, 7, 8, 9, 0]
+
+/**
+ * Array Of User's Scores
+ * @type {Array&lt;number>}
+ */
+const scores = [300, 500, 100]
+
+/**
+ * Array Of numbers and strings
+ * @type {Array&lt;number|string>}
+ */
+const scoresAndStrings = [300, 500, 100, "2000"]
+
+/**
+ * Array Of numbers and strings
+ * @type {Array&lt;string>}
+ */
+const strings = ["text"]
+strings.push('text 2') // Argument of type 'number' is not assignable to parameter of type 'string'.ts(2345)
+
 </code></pre>
         </article>
     </section>
