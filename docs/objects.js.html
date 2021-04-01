@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: arrays.js</title>
+    <title>JSDoc: Source: objects.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: arrays.js</h1>
+    <h1 class="page-title">Source: objects.js</h1>
 
     
 
@@ -27,31 +27,33 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Array of numbers
- * @type {Array}
+ * Person Object
+ * @type {{ id: number, firstName: string, lastName: string, age: number }}
  */
 
-const numbers = [1, true, [], 2, 3, 4, 5, 6, 7, 8, 9, 0]
+const person = {
+  id: 90,
+  firstName: "Brandon",
+  lastName: "Scott",
+  age: 20
+}
 
 /**
- * Array Of User's Scores
- * @type {Array&lt;number>}
+ * Person Object two
+ * @type {{
+ * id: number|string,
+ * firstName: string,
+ * lastName: string,
+ * age: number
+ * }}
  */
-const scores = [300, 500, 100]
 
-/**
- * Array Of numbers and strings
- * @type {Array&lt;number|string>}
- */
-const scoresAndStrings = [300, 500, 100, "2000"]
-
-/**
- * Array Of numbers and strings
- * @type {Array&lt;string>}
- */
-const strings = ["text"]
-strings.push('text 2') // Argument of type 'number' is not assignable to parameter of type 'string'.ts(2345)
-
+const person2 = {
+  id: 1,
+  firstName: "Brandon",
+  lastName: "Scott",
+  age: 30
+}
 </code></pre>
         </article>
     </section>
