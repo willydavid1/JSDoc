@@ -1,0 +1,1 @@
+To get this configuration run $ npx jsdoc -c jsdoc.json 

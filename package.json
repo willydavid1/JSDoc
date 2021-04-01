@@ -1,0 +1,15 @@
+{
+  "name": "JSDoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs": "jsdoc -c jsdoc.json"
+  },
+  "keywords": [],
+  "author": "Willy David",
+  "license": "ISC",
+  "dependencies": {
+    "jsdoc": "^3.6.6"
+  }
+}
