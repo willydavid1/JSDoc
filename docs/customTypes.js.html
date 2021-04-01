@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: functions.js</title>
+    <title>JSDoc: Source: customTypes.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: functions.js</h1>
+    <h1 class="page-title">Source: customTypes.js</h1>
 
     
 
@@ -27,23 +27,33 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Add Two numbers
- * @param {number} n1 First number
- * @param {number} n2 Second number
- * @returns {number} Total
+ * New user object ("interface")
+ * @typedef {object} User
+ * @property {number} id User id
+ * @property {string} name User's name
+ * @property {number|string} [age] User's age (Optional)
+ * @property {boolean} isActive User state
  */
-function add (n1, n2) {
-  return n1 + n2
+
+/**
+ * @type {User}
+ */
+const newUser = {
+  age: 20,
+  id: 90,
+  isActive: false,
+  name: 'Brandon'
 }
 
 /**
- * Add two numbers and returns a string
- * @param {number} n1 First Number to plus
- * @param {number} n2 Second Number to plus
- * @returns {string} Total
+ * @type {User}
  */
-const add2 = (n1, n2) => `The result(${n1} + ${n2}): ${n1 + n2}`
-</code></pre>
+const newUser2 = {
+  age: 20,
+  id: 90,
+  isActive: false,
+  name: 'Brandon'
+}</code></pre>
         </article>
     </section>
 
