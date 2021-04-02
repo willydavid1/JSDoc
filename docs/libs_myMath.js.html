@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: functions.js</title>
+    <title>JSDoc: Source: libs/myMath.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: functions.js</h1>
+    <h1 class="page-title">Source: libs/myMath.js</h1>
 
     
 
@@ -27,23 +27,30 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Add Two numbers
- * @param {number} n1 First number
- * @param {number} n2 Second number
- * @returns {number} Total
+ * My Math library
+ * @module MyMath
  */
-function add (n1, n2) {
-  return n1 + n2
-}
 
 /**
- * Add two numbers and returns a string
- * @param {number} n1 First Number to plus
- * @param {number} n2 Second Number to plus
- * @returns {string} Total
+ * Add two numbers
+ * @param {number} x First Number
+ * @param {number} y Second Number
+ * @returns {number} Sum of X and Y
  */
-const add2 = (n1, n2) => `The result(${n1} + ${n2}): ${n1 + n2}`
-</code></pre>
+const add = (x, y) => x + y
+
+/**
+ * Substract Two numbers
+ * @param {number} x First Number
+ * @param {number} y Second Number
+ * @returns {number} substract of X and Y
+ */
+const substract = (x, y) => x - y
+
+module.exports = {
+  add,
+  substract
+}</code></pre>
         </article>
     </section>
 
