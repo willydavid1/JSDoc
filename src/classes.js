@@ -28,6 +28,9 @@ class Programmer {
   }
 }
 
+/**
+ * Know more in {@link Programmer}
+ */
 const programmerOne = new Programmer({ name: 'Brandon', id: 3, isActive: true }, 'javascript')
 const programmerTwo = new Programmer({ name: 'Brandon', id: 3, isActive: true }, 'go')
 
