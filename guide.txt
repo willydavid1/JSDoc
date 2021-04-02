@@ -5,3 +5,6 @@ To get this configuration run $ npx jsdoc -c jsdoc.json
 {
   "js/ts.implicitProjectConfig.checkJs": true
 }
+
+Para templates personalizados podemos modificarlo nosotros o usar uno de internet ejemplo https://github.com/clenemt/docdash
+y especificarlo como template "template": "node_modules/docdash"
